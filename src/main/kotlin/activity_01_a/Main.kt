@@ -7,16 +7,26 @@ import java.util.Date
 
 fun main (){
 
-    var programEnrolled: String? = null
-    var classStartDate = LocalDate.parse("2022-10-06")
-    var dateFormat = DateTimeFormatter.ofPattern("MM-dd-yyy")
-    var formattedWorkStartDate = classStartDate.format(dateFormat)
-    var firstName: String? = null
-    var lastName: String? = null
-    var middleName: String? = null
+    //Personal Information of Student
+    var firstName: String = ""
+    var lastName: String = ""
+    var middleName: String = ""
 
-    var emailAddress: String? = null
+    //Contact Information
+    var emailAddress: String = ""
+    var cellPhone: Long = 0L
+    var discordGG: String? = null
+    var facebookProfile: String?= null
 
+    //Kode Go Information
+    var programEnrolled: String = "MD2P"
+    var classStartDate = LocalDate.of(2022,Month.SEPTEMBER,30)
+
+    //Performance
+    var absences: Double? = 0.0
+    var submittedProject1: Boolean = false
+    var submittedProject2: Boolean = false
+    var submittedProject3: Boolean = false
 
 
 
