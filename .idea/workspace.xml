@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added package activity_01_b&#10;added Library">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_c/Grocery.kt" afterDir="false" />
+    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added package activity_01_c&#10;added Grocery">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/MonetaryAmounts.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Kotlin.MonetaryAmountsKt">
     <configuration name="ApplicationFormExerciseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise_1.ApplicationFormExerciseKt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -59,8 +59,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MonetaryAmountsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_1_d.MonetaryAmountsKt" />
+      <module name="KodeGoExercisesAlfaro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MonetaryAmountsKt" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.ApplicationFormExerciseKt" />
       </list>
@@ -131,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665486576151</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added package activity_01_c&#10;added Grocery">
+      <created>1665487710438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665487710438</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +167,7 @@
     <MESSAGE value="added package activity_01_1&#10;added Main" />
     <MESSAGE value="added package activity_01_b&#10;added Main" />
     <MESSAGE value="added package activity_01_b&#10;added Library" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package activity_01_b&#10;added Library" />
+    <MESSAGE value="added package activity_01_c&#10;added Grocery" />
+    <option name="LAST_COMMIT_MESSAGE" value="added package activity_01_c&#10;added Grocery" />
   </component>
 </project>
