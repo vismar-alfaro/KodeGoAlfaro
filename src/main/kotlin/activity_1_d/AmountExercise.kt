@@ -45,6 +45,7 @@ fun main(args: Array<String>) {
         var sum3 = num4?.plus(sum2!!)
         var sum4 = num5?.plus(sum3!!)
         sumTotal = sum4?.toDouble()
+
         try {
             divisor1 = divisor?.toInt()
             try {

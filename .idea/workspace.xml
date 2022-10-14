@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added package activity_01_d&#10;added MonetaryAmounts.kt">
+    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added package activity_01_d&#10;added AmountExercise.kt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/MonetaryAmounts.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/MonetaryAmounts.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_c/Grocery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_c/Grocery.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.MonetaryAmountsKt">
+  <component name="RunManager" selected="Kotlin.AmountExerciseKt">
+    <configuration name="AmountExerciseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_1_d.AmountExerciseKt" />
+      <module name="KodeGoExercisesAlfaro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApplicationFormExerciseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise_1.ApplicationFormExerciseKt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -68,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AmountExerciseKt" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.ApplicationFormExerciseKt" />
       </list>
@@ -152,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665491853427</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added package activity_01_d&#10;added MonetaryAmounts.kt">
+      <created>1665727034365</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665727034365</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added package activity_01_d&#10;added AmountExercise.kt">
+      <created>1665727212619</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665727212619</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +198,7 @@
     <MESSAGE value="added package activity_01_b&#10;added Library" />
     <MESSAGE value="added package activity_01_c&#10;added Grocery" />
     <MESSAGE value="added package activity_01_d&#10;added MonetaryAmounts.kt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package activity_01_d&#10;added MonetaryAmounts.kt" />
+    <MESSAGE value="added package activity_01_d&#10;added AmountExercise.kt" />
+    <option name="LAST_COMMIT_MESSAGE" value="added package activity_01_d&#10;added AmountExercise.kt" />
   </component>
 </project>
