@@ -1,3 +1,5 @@
+package activity_1_d
+
 import java.lang.ArithmeticException
 import java.util.*
 
