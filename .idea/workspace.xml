@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="updated activity01_c">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" afterDir="false" />
+    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="updated activity01_c&#10;change print into logger">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_b/Library.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_b/Library.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665728934504</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="updated activity01_c&#10;change print into logger">
+      <created>1666006651280</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666006651280</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +212,7 @@
     <MESSAGE value="added package activity_01_d&#10;added MonetaryAmounts.kt" />
     <MESSAGE value="added package activity_01_d&#10;added AmountExercise.kt" />
     <MESSAGE value="updated activity01_c" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated activity01_c" />
+    <MESSAGE value="updated activity01_c&#10;change print into logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated activity01_c&#10;change print into logger" />
   </component>
 </project>
