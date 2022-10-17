@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added package activity_01_d&#10;added AmountExercise.kt">
+    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="updated activity01_c">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_c/Grocery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_c/Grocery.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665727212619</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated activity01_c">
+      <created>1665728934504</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665728934504</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +206,7 @@
     <MESSAGE value="added package activity_01_c&#10;added Grocery" />
     <MESSAGE value="added package activity_01_d&#10;added MonetaryAmounts.kt" />
     <MESSAGE value="added package activity_01_d&#10;added AmountExercise.kt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package activity_01_d&#10;added AmountExercise.kt" />
+    <MESSAGE value="updated activity01_c" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated activity01_c" />
   </component>
 </project>

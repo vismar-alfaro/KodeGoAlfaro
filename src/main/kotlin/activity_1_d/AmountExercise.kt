@@ -1,7 +1,12 @@
 package activity_1_d
 
+import java.util.LinkedList
+import mu.KotlinLogging
+
 import java.lang.ArithmeticException
 import java.util.*
+
+private val logger = KotlinLogging.logger{}
 
 fun main(args: Array<String>) {
 
@@ -15,23 +20,23 @@ fun main(args: Array<String>) {
     var divisor1: Int? = null
     var sumTotal: Double? = null
     var amount1: String? = null
-    print("Enter first amount: ")
+    logger.info{("Enter first amount: ")}
     amount1 = readLine()?.toString()
     var amount2: String? = null
-    print("Enter second amount: ")
+    logger.info{("Enter second amount: ")}
     amount2 = readLine()?.toString()
     var amount3: String? = null
-    print("Enter third amount: ")
+    logger.info{("Enter third amount: ")}
     amount3 = readLine()?.toString()
     var amount4: String? = null
-    print("Enter fourth amount: ")
+    logger.info{("Enter fourth amount: ")}
     amount4 = readLine()?.toString()
     var amount5: String? = null
-    print("Enter fifth amount: ")
+    logger.info{("Enter fifth amount: ")}
     amount5 = readLine()?.toString()
 
     var divisor: String? = null
-    print("Divide the value by how much?: ")
+    logger.info{("Divide the value by how much?: ")}
     divisor = readLine().toString()
 
     try {
@@ -50,16 +55,16 @@ fun main(args: Array<String>) {
             divisor1 = divisor?.toInt()
             try {
                 result = divisor1?.toDouble()?.let { sumTotal?.div(it) }
-                println("The answer is: $result")
+                logger.info{("The answer is: $result")}
             } catch (e: ArithmeticException) {
-                println("Divisor is invalid")
+                logger.info{("Divisor is invalid")}
             }
         } catch (e: NumberFormatException) {
-            println("Please give a number")
+            logger.info{("Please give a number")}
         }
     } catch (e: NumberFormatException) {
-        println("Input is invalid")
-        println("Please give a number")
+        logger.info{("Input is invalid")}
+        logger.info{("Please give a number")}
     }
 
 }
