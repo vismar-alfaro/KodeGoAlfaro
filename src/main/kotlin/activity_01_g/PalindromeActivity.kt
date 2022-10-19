@@ -5,6 +5,10 @@ import mu.KotlinLogging
 private val logger = KotlinLogging.logger{}
 
 fun main(args: Array<String>) {
+//    Create an application that will accept 1 string.
+//
+//    Your application will print “Palindrome” if the string is a palindrome.
+
     var word: String? = null
     var reverse: String? = ""
 
