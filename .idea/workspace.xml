@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="updated activity01_b">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_d/AmountActiity1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_f/UniqueChar.kt" afterDir="false" />
+    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added activity_01_f&#10;added UniqueChar.kt">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_g/PalindromeActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_c/Grocery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_c/Grocery.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_1_d/AmountExercise.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_d/AmountExercise.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.UniqueCharKt">
+  <component name="RunManager" selected="Kotlin.PalindromeActivityKt">
     <configuration name="AmountExerciseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity_01_d.AmountExerciseKt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -76,6 +73,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PalindromeActivityKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_01_g.PalindromeActivityKt" />
+      <module name="KodeGoExercisesAlfaro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UniqueCharKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity_01_f.UniqueCharKt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -85,6 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PalindromeActivityKt" />
         <item itemvalue="Kotlin.UniqueCharKt" />
         <item itemvalue="Kotlin.AmountExerciseKt" />
         <item itemvalue="Kotlin.MainKt" />
@@ -206,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666006912172</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added activity_01_f&#10;added UniqueChar.kt">
+      <created>1666181773102</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666181773102</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +245,7 @@
     <MESSAGE value="updated activity01_c" />
     <MESSAGE value="updated activity01_c&#10;change print into logger" />
     <MESSAGE value="updated activity01_b" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated activity01_b" />
+    <MESSAGE value="added activity_01_f&#10;added UniqueChar.kt" />
+    <option name="LAST_COMMIT_MESSAGE" value="added activity_01_f&#10;added UniqueChar.kt" />
   </component>
 </project>
