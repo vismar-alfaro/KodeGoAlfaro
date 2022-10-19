@@ -1,9 +1,7 @@
-package activity_1_c
+package activity_01_c
 
 import java.time.LocalDate
-import java.time.Month
 import java.time.format.DateTimeFormatter
-import java.util.Date
 
 fun main() {
 

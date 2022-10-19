@@ -1,10 +1,8 @@
-package activity_1_d
+package activity_01_d
 
-import java.util.LinkedList
 import mu.KotlinLogging
 
 import java.lang.ArithmeticException
-import java.util.*
 
 private val logger = KotlinLogging.logger{}
 
