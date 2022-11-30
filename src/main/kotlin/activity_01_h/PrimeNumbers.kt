@@ -27,7 +27,7 @@ fun main(args: Array<String>) {
     integerOne = readLine().toString()
 
     while(index in 0 until integerOne.length){
-        if (integerOne[index] in '0' until '9'){
+        if (integerOne[index] in '0'..'9'){
             newNum1 = newNum1 + integerOne[index]
 
         }
@@ -43,7 +43,7 @@ fun main(args: Array<String>) {
     integerTwo = readLine().toString()
 
     while(index2 in 0 until integerTwo.length){
-        if (integerTwo[index2] in '0' until '9'){
+        if (integerTwo[index2] in '0'..'9'){
             newNum2 = newNum2 + integerTwo[index2]
 
         }
@@ -59,7 +59,7 @@ fun main(args: Array<String>) {
     var i:Int = 2
 
     if (integernew1!! <= integernew2!!){
-        logger.info { "$integernew2 is greater than $integernew1" }
+        logger.info { "$integernew1 is less than $integernew2" }
         while (integernew1!! <= integernew2!!){
             var flag = 0
             if (integernew1 <= 1){
@@ -83,7 +83,7 @@ fun main(args: Array<String>) {
         }
     }
     else if (integernew2!! <= integernew1!!){
-        logger.info { "$integernew1 is greater than $integernew2" }
+        logger.info { "$integernew2 is less than $integernew1" }
         while (integernew2!! <= integernew1!!){
             var flag = 0
             if (integernew2 <= 1){

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="added package activity_01_j&#10;added GroceryCart.kt">
+    <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="implemented data structures&#10;&#10;activity_01_c">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_a/Functions01.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_a/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_a/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_b/Library.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_b/Library.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_c/Grocery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_c/Grocery.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_d/AmountExercise.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_d/AmountExercise.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_f/UniqueChar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_f/UniqueChar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_h/PrimeNumbers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_h/PrimeNumbers.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_j/GroceryCart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_j/GroceryCart.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.GroceryCartKt">
+  <component name="RunManager" selected="Kotlin.Functions01Kt">
+    <configuration name="Functions01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_03_a.Functions01Kt" />
+      <module name="KodeGoExercisesAlfaro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroceryCartKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity_01_j.GroceryCartKt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -78,13 +85,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumbersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity_01_h.PrimeNumbersKt" />
-      <module name="KodeGoExercisesAlfaro.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UniqueCharKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity_01_f.UniqueCharKt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -94,9 +94,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Functions01Kt" />
         <item itemvalue="Kotlin.GroceryCartKt" />
         <item itemvalue="Kotlin.LibraryBorrowKt" />
-        <item itemvalue="Kotlin.PrimeNumbersKt" />
         <item itemvalue="Kotlin.PalindromeActivityKt" />
         <item itemvalue="Kotlin.UniqueCharKt" />
       </list>
@@ -279,7 +279,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666443800678</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="implemented data structures&#10;&#10;activity_01_a">
+      <created>1666614222518</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666614222518</updated>
+    </task>
+    <task id="LOCAL-00026" summary="implemented data structures&#10;&#10;activity_01_b">
+      <created>1666614271474</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666614271474</updated>
+    </task>
+    <task id="LOCAL-00027" summary="implemented data structures&#10;&#10;activity_01_c">
+      <created>1666614330434</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666614330434</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +333,10 @@
     <MESSAGE value="added package activity_01_h&#10;added PrimeNumbers.kt" />
     <MESSAGE value="added package activity_01_i&#10;added LibraryBorrow.kt" />
     <MESSAGE value="added package activity_01_j&#10;added GroceryCart.kt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package activity_01_j&#10;added GroceryCart.kt" />
+    <MESSAGE value="implemented data structures&#10;&#10;activity_01_a" />
+    <MESSAGE value="implemented data structures&#10;&#10;activity_01_b" />
+    <MESSAGE value="implemented data structures&#10;&#10;activity_01_c" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented data structures&#10;&#10;activity_01_c" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -46,5 +46,4 @@ fun main() {
     val sum = newPrice.sum()
     logger.info { "Total Amount: $sum" }
 
-
 }

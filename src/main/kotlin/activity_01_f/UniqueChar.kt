@@ -7,6 +7,7 @@ private val logger = KotlinLogging.logger{}
 fun main(args: Array<String>) {
     var word1: String? = null
     var word2: String? = null
+    var newWord = ""
     var index = 0
     var index2 = 0
 
@@ -15,21 +16,33 @@ fun main(args: Array<String>) {
     logger.info { "Please Input Second Word: " }
     word2 = readLine().toString()
 
-    val wordComb: String = word1 + word2
+    while (index in 0 until word1.length)
 
-
-    while(index in 0 until wordComb.length){
-        var mark = 0
-        for (index2 in 0 until wordComb.length){
-            if (wordComb.lowercase()[index] == wordComb.lowercase()[index2] && index != index2){
-                mark = 1
+        for (index2 in 0 until word1.length){
+            if (word1[index] == word2[index2]){
+                newWord + word1[index]
             }
         }
-        if (mark == 0){
-            logger.info { "Unique Character: ${wordComb[index]}" }
-        }
-        index2 ++
-    index++
-    }
 
-}
+
+
+
+            //val wordComb: String = word1 + word2
+
+
+//    while(index in 0 until wordComb.length){
+//        var mark = 0
+//        for (index2 in 0 until wordComb.length){
+//            if (wordComb.lowercase()[index] == wordComb.lowercase()[index2] && index != index2){
+//                mark = 1
+//            }
+//        }
+//        if (mark == 0){
+//            logger.info { "Unique Character: ${wordComb[index]}" }
+//        }
+//        index2 ++
+//    index++
+//    }
+
+
+        }
