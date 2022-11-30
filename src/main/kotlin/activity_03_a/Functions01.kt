@@ -19,6 +19,8 @@ package activity_03_a
 //9.  Create a function "showStudents" that will print all the entries in the ArrayList.
 
 import mu.KotlinLogging
+import java.util.*
+import kotlin.collections.ArrayList
 
 private val logger = KotlinLogging.logger{}
 
@@ -30,44 +32,54 @@ fun main() {
     //accept a name and return true if the name is found, otherwise false.
     var name: String? = null
     logger.info{"Enter a Name: "}
-    name = readLine().toString()
-    logger.info{ isStudentInRecord(names,name) }
+    name = readLine().toString().lowercase()
+    var newname = name.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+    logger.info{ isStudentInRecord(names,newname) }
 
     //accept a name and add it to the ArrayList.
     var addName:String? = null
     logger.info { "Input a Name to be Added: " }
-    addName = readLine().toString()
-    names = addStudent(names,addName)
+    addName = readLine().toString().lowercase()
+    var newaddName = addName.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+    names = addStudent(names,newaddName)
     logger.info { names.contentToString() }
 
     //accept a name and remove it from the ArrayList.
     var removeName:String? = null
     logger.info { "Input a Name to be Remove: " }
-    removeName = readLine().toString()
-    names = removeStudent(names, removeName)
+    removeName = readLine().toString().lowercase()
+    var newremoveName = removeName.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+    names = removeStudent(names, newremoveName)
     logger.info { names.contentToString() }
 
     //return the size of the ArrayList.
-    logger.info{ countStudent(names) }
+    countStudent(names)
 
     //accept a String and search if
     //that string is found with in the ArrayList, it will return an ArrayList of names that matched
     //if there are.
     var studentWildSearch: String? = null
-    logger.info{"Input Name to be Search: "}
+    logger.info{"Input String to be Search: "}
     studentWildSearch = readLine().toString()
     searchStudentWildSearch(names,studentWildSearch)
 
     //accept a String and search if there is an
     //exact match of the String input, it will return an ArrayList of names that matched if there are.
     var studentSearchName: String? = null
-    logger.info{"Input Name to be Search: "}
+    logger.info{"Input String to be Search: "}
     studentSearchName = readLine().toString()
     searchStudentName(names,studentSearchName)
 
     //function "searchStudent" that will accept a String and call "searchStudentWildSearch"
     //if the String input is less than or equal to three, and it will call "searchStudentName" if the
     //String input is greater than three.
+    var searchStudentString: String? = null
+    logger.info{"Input String to be Search: "}
+    searchStudentString = readLine().toString()
+    searchStudent(names,searchStudentString)
+
+    //Create a function "showStudents" that will print all the entries in the ArrayList.
+    showStudent(names)
 
 
 }
@@ -90,27 +102,15 @@ fun removeStudent(remove:Array<String>, element:String): Array<String> {
 
 fun countStudent(arr:Array<String>){
     val list: MutableList<String> = arr.toMutableList()
-    logger.info {arr.count()}
+    logger.info {"Number of Names in List: ${arr.count()}"}
 }
 
 fun searchStudentWildSearch(mylist:Array<String>, target:String): Array<String>{
     var index = 0
     var hashList:ArrayList<String> = ArrayList()
-    while (index < mylist.size){
-        if(mylist[index].lowercase() == target.lowercase() ){
-            hashList.add(mylist[index])
-        }
-    index++
-    }
-    logger.info{hashList}
-    return hashList.toTypedArray()
-}
 
-fun searchStudentName(mylist:Array<String>, target: String):Array<String>{
-    var index = 0
-    var hashList:ArrayList<String> = ArrayList()
     while (index < mylist.size){
-        if(mylist[index] == target ){
+        if(target.lowercase() in mylist[index].lowercase()){
             hashList.add(mylist[index])
         }
         index++
@@ -119,9 +119,39 @@ fun searchStudentName(mylist:Array<String>, target: String):Array<String>{
     return hashList.toTypedArray()
 }
 
-//fun studentStudent(mylist: Array<String>, target: Array<String>):Array<String>{
-//
-//}
+fun searchStudentName(mylist:Array<String>, target: String):Array<String>{
+    var index = 0
+    var hashList:ArrayList<String> = ArrayList()
+
+    while (index < mylist.size){
+        if(target == mylist[index]){
+            hashList.add(mylist[index])
+        }
+        index++
+    }
+    logger.info{hashList}
+    return hashList.toTypedArray()
+}
+
+fun searchStudent(mylist: Array<String>, target:String){
+    if (target.length == 3 || target.length < 3 ){
+        searchStudentWildSearch(mylist,target)
+    }
+    else if (target.length > 3){
+        searchStudentName(mylist,target)
+    }
+}
+
+fun showStudent(arr:Array<String>){
+    logger.info { arr.joinToString(
+        prefix = "[",
+        separator = ",",
+        postfix = "]",
+        truncated = "...",
+    ) }
+}
+
+
 
 
 
