@@ -1,56 +1,69 @@
-package activity_03_a
+package activity_04_a
 
-//Note: Names are single word with no spaces example, "Marco", "Eugene", "Sarah", "Isaiah",
-// "Anthony", "Henry".
-//1. Create an ArrayList of names with 20 entries.
-//2. Create a function "isStudentInRecord" that will accept a name and return true if the
-//  name is found, otherwise false.
-//3. Create a function "addStudent" that will accept a name and add it to the ArrayList.
-//4. Create a function "removeStudent"  that will accept a name and remove it from the ArrayList.
-//5. Create a function "countStudent" that will return the size of the ArrayList.
-//6. Create a function "searchStudentWildSearch" that will accept a String and search if
-// that string is found with in the ArrayList, it will return an ArrayList of names that matched
-// if there are.
-//7. Create a function  "searchStudentName" that will accept a String and search if there is an
-// exact match of the String input, it will return an ArrayList of names that matched if there are.
-//8. Create a function "searchStudent" that will accept a String and call "searchStudentWildSearch"
-// if the String input is less than or equal to three, and it will call "searchStudentName" if the
-// String input is greater than three.
-//9.  Create a function "showStudents" that will print all the entries in the ArrayList.
-
-import mu.KotlinLogging
+import Student
 import java.util.*
 import kotlin.collections.ArrayList
+/*
+* Instructions :
 
-private val logger = KotlinLogging.logger{}
+1. Use class to represent the student rather string.Make sure the student has a firstName,
+   lastName, nickName, id and year enrolled
+2. Update the searchStudentWildSearch to search for the wild string in the lastname,
+   middle name, and firstname. Return the Arraylist of students that match the searched string,
+   if there are no entries return an emptry ArrayList.
+3. Add a function searchStudentWildSearch that will accept a string and either of the following
+   values, lastname, middlename, nickname. This will search the specific wild string depending
+   where it was mentioned to be searched for. Return the Arraylist of students that match the
+   searched string, if there are no entries return an emptry ArrayList.*/
+
+interface StudentDAO{
+    fun addStudent(student:Student)
+    fun getStudent() : ArrayList<Student>
+    fun searchStudent(firstName:String = "", middleName:String = "", lastName:String = "")
+}
+
+class StudentStub() : StudentDAO{
+
+    var studentRecords: ArrayList<Student> = ArrayList()
+
+    override fun addStudent(student: Student) {
+        studentRecords.add(student)
+    }
+
+    override fun getStudent(): ArrayList<Student> = studentRecords
+
+    override fun searchStudent(firstName: String, middleName: String, lastName: String) {
+        println("Searching stub")
+    }
+}
 
 fun main() {
     var names = arrayOf("James","Nikko","Pam","Lorie","Delight","Sancho","Norway","Willy",
-    "Ruthchel","Rachel","Jacob","Reuben","Simeon","Levi","Judah","Gad","Asher","Dan","Naphtali",
+        "Ruthchel","Rachel","Jacob","Reuben","Simeon","Levi","Judah","Gad","Asher","Dan","Naphtali",
         "Joseph")
 
     //accept a name and return true if the name is found, otherwise false.
     var name: String? = null
-    logger.info{"Enter a Name: "}
+    println("Enter a Name: ")
     name = readLine().toString().lowercase()
     var newname = name.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
-    logger.info{ isStudentInRecord(names,newname) }
+    println(isStudentInRecord(names,newname))
 
     //accept a name and add it to the ArrayList.
     var addName:String? = null
-    logger.info { "Input a Name to be Added: " }
+    println("Input a Name to be Added: " )
     addName = readLine().toString().lowercase()
     var newaddName = addName.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
     names = addStudent(names,newaddName)
-    logger.info { names.contentToString() }
+    println(names.contentToString())
 
     //accept a name and remove it from the ArrayList.
     var removeName:String? = null
-    logger.info { "Input a Name to be Remove: " }
+    println("Input a Name to be Remove: " )
     removeName = readLine().toString().lowercase()
     var newremoveName = removeName.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
     names = removeStudent(names, newremoveName)
-    logger.info { names.contentToString() }
+    println(names.contentToString())
 
     //return the size of the ArrayList.
     countStudent(names)
@@ -59,14 +72,14 @@ fun main() {
     //that string is found with in the ArrayList, it will return an ArrayList of names that matched
     //if there are.
     var studentWildSearch: String? = null
-    logger.info{"Input String to be Search: "}
+    println("Input String to be Search: ")
     studentWildSearch = readLine().toString()
     searchStudentWildSearch(names,studentWildSearch)
 
     //accept a String and search if there is an
     //exact match of the String input, it will return an ArrayList of names that matched if there are.
     var studentSearchName: String? = null
-    logger.info{"Input String to be Search: "}
+    println("Input String to be Search: ")
     studentSearchName = readLine().toString()
     searchStudentName(names,studentSearchName)
 
@@ -74,7 +87,7 @@ fun main() {
     //if the String input is less than or equal to three, and it will call "searchStudentName" if the
     //String input is greater than three.
     var searchStudentString: String? = null
-    logger.info{"Input String to be Search: "}
+    println("Input String to be Search: ")
     searchStudentString = readLine().toString()
     searchStudent(names,searchStudentString)
 
@@ -100,7 +113,7 @@ fun removeStudent(remove:Array<String>, element:String): Array<String> {
 
 fun countStudent(arr:Array<String>){
     val list: MutableList<String> = arr.toMutableList()
-    logger.info {"Number of Names in List: ${arr.count()}"}
+    println("Number of Names in List: ${arr.count()}")
 }
 
 fun searchStudentWildSearch(mylist:Array<String>, target:String): Array<String>{
@@ -113,7 +126,7 @@ fun searchStudentWildSearch(mylist:Array<String>, target:String): Array<String>{
         }
         index++
     }
-    logger.info{hashList}
+    println(hashList)
     return hashList.toTypedArray()
 }
 
@@ -127,7 +140,7 @@ fun searchStudentName(mylist:Array<String>, target: String):Array<String>{
         }
         index++
     }
-    logger.info{hashList}
+    println(hashList)
     return hashList.toTypedArray()
 }
 
@@ -141,16 +154,10 @@ fun searchStudent(mylist: Array<String>, target:String){
 }
 
 fun showStudent(arr:Array<String>){
-    logger.info { arr.joinToString(
+    println( arr.joinToString(
         prefix = "[",
         separator = ",",
         postfix = "]",
         truncated = "...",
-    ) }
+    ) )
 }
-
-
-
-
-
-

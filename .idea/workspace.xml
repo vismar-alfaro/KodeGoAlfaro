@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50b9ce28-3525-421e-8481-f27602ee9cd9" name="Changes" comment="activity_03_a">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Student.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_b/Function_2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_c/Function_3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_a/Classes_1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_b/Classes_2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_03_a/Functions01.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_a/Functions01.kt" afterDir="false" />
     </list>
@@ -45,7 +50,21 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Kotlin.Functions01Kt">
+  <component name="RunManager" selected="Kotlin.Function_3Kt">
+    <configuration name="Function_2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_03_b.Function_2Kt" />
+      <module name="KodeGoExercisesAlfaro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Function_3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_03_c.Function_3Kt" />
+      <module name="KodeGoExercisesAlfaro.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Functions01Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity_03_a.Functions01Kt" />
       <module name="KodeGoExercisesAlfaro.main" />
@@ -74,27 +93,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromeActivityKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity_01_g.PalindromeActivityKt" />
-      <module name="KodeGoExercisesAlfaro.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UniqueCharKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity_01_f.UniqueCharKt" />
-      <module name="KodeGoExercisesAlfaro.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Function_3Kt" />
+        <item itemvalue="Kotlin.Function_2Kt" />
         <item itemvalue="Kotlin.Functions01Kt" />
         <item itemvalue="Kotlin.GroceryCartKt" />
         <item itemvalue="Kotlin.LibraryBorrowKt" />
-        <item itemvalue="Kotlin.PalindromeActivityKt" />
-        <item itemvalue="Kotlin.UniqueCharKt" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669779240318</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="activity_03_a">
+      <created>1669790805507</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1669790805507</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +434,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="kotlin-function">
           <url>file://$PROJECT_DIR$/src/main/kotlin/activity_03_a/Functions01.kt</url>
-          <line>107</line>
+          <line>105</line>
           <properties method="searchStudentWildSearch">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
